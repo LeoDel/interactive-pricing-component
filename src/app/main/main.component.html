@@ -1,3 +1,38 @@
-<div class="container">
-  <h1>main works!</h1>
+<!--<div class="header">-->
+<!--  <h1>-->
+<!--    Simple, traffic-based pricing-->
+<!--  </h1>-->
+<!--  <p>Sign-up for out 30-day trial. <br>No credit card required.</p>-->
+<!--</div>-->
+
+<!--<div class="pricing-container">-->
+<!--  <div class="pageviews info-style">100K PAGEVIEWS</div>-->
+
+<!--  <div>SLIDER</div>-->
+
+<!--  <div class="value-box">-->
+<!--    <div class="value">$16.00</div>-->
+<!--    <div class="info-style">/ month</div>-->
+<!--  </div>-->
+
+
+<!--  <div class="billing-selection">-->
+<!--    <div class="info-style monthly">Monthy Billing</div>-->
+<!--    <div class="check-switch">-->
+<!--      <span></span>-->
+<!--    </div>-->
+<!--    <div class="info-style yearly">Yearly Billing <span class="badge rounded-pill bg-primary">25%</span></div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="row d-flex align-content-center">
+  <div class="col-6" style="text-align: right">
+    <img src="assets/images/slider.png" width="80"px>
+<!--    24 x 40-->
+  </div>
+  <div class="col-6">
+    <h1>Boolean Value: {{booleanTest}}</h1>
+    <app-check-switch [activeSwitch]="booleanTest" (onchange)="testResult($event)"></app-check-switch>
+  </div>
 </div>
+

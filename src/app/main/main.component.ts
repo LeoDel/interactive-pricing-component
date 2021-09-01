@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  booleanTest = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  testResult(result: boolean): void {
+    console.warn("Clicked!", result);
+    this.booleanTest = result;
   }
 
 }

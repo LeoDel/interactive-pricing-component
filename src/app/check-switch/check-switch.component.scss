@@ -1,0 +1,38 @@
+@import "src/assets/colors";
+
+$switchBorderWidth: 5px;
+$switchHeight: 26px;
+$sphere: $switchHeight - 2*$switchBorderWidth;
+
+.check-switch {
+  height: $switchHeight;
+  width: 48px;
+  border-radius: 15px;
+  border: $switchBorderWidth solid $lightGrayishBlue2;
+  background: $lightGrayishBlue2;
+  position: relative;
+
+  .check-sphere {
+    float: left;
+    transition: ease-in-out 0.3s;
+    background: white;
+    border-radius: 100%;
+    height: $sphere;
+    width: $sphere;
+    position: relative;
+    left: 0;
+  }
+
+  &.active {
+    .check-sphere {
+      left: 100%;
+      transform: translate(-100%,0);
+    }
+  }
+
+  &:hover {
+    background: $strongCyan;
+    border-color: $strongCyan;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,77 @@
+@import "src/assets/colors";
+
+:host {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+
+.header {
+  text-align: center;
+  background-image: url("/assets/images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 145px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+
+  h1 {
+    font-weight: bold;
+  }
+  p {
+    color: $grayishBlue;
+  }
+}
+
+.pricing-container {
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  display: grid;
+  padding: 40px 15px;
+
+  .info-style {
+    color: $grayishBlue;
+    text-align: center;
+    font-size: 12px;
+  }
+  .pageviews {
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .value-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .value {
+      font-weight: bold;
+      font-size: 32px;
+      padding-right: 7px;
+    }
+    .info-style {
+      margin-top: 3px;
+    }
+  }
+
+  .billing-selection {
+    display: flex;
+    justify-content: center;
+
+    .info-style {
+    }
+  }
+}
+
