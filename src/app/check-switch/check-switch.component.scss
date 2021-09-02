@@ -36,7 +36,7 @@ $sphere: $switchHeight - 2*$switchBorderWidth;
   }
 
   &:hover {
-    background: $strongCyan;
+    //background: $strongCyan;
     border-color: $softCyan;
     cursor: pointer;
   }

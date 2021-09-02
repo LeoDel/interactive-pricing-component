@@ -8,29 +8,27 @@
 <div class="pricing-container">
   <div class="pageviews info-style">100K PAGEVIEWS</div>
 
-  <div>SLIDER</div>
+  <app-slider-select></app-slider-select>
 
   <div class="value-box">
     <div class="value">$16.00</div>
     <div class="info-style">/ month</div>
   </div>
 
-
   <div class="billing-selection">
     <div class="info-style monthly">Monthy Billing</div>
-    <app-check-switch></app-check-switch>
-    <div class="info-style yearly">Yearly Billing <span class="badge rounded-pill bg-primary">25%</span></div>
+    <app-check-switch [activeSwitch]="yearlyBilling" (onchange)="toggleMonthlyBilling()"></app-check-switch>
+    <div class="info-style yearly">Yearly Billing <span class="badge rounded-pill">-25%</span></div>
   </div>
+
+  <hr class="line-divider">
+
+  <div class="call-to-action">
+    <ul class="advantages-list">
+      <li>Unlimited websites</li>
+      <li>100% data ownership</li>
+      <li>Email reports</li>
+    </ul>
+  </div>
+
 </div>
-
-<!--<div class="row d-flex align-content-center">-->
-<!--  <div class="col-6" style="text-align: right">-->
-<!--    <img src="assets/images/slider.png" width="80"px>-->
-<!--&lt;!&ndash;    24 x 40&ndash;&gt;-->
-<!--  </div>-->
-<!--  <div class="col-6">-->
-<!--    <h1>Boolean Value: {{booleanTest}}</h1>-->
-<!--    <app-check-switch [activeSwitch]="booleanTest" (onchange)="testResult($event)"></app-check-switch>-->
-<!--  </div>-->
-<!--</div>-->
-

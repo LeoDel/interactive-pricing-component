@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 
 
@@ -20,12 +20,12 @@
   background-image: url("/assets/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 145px;
+  min-height: 9.5rem;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 3rem;
 
   h1 {
     font-weight: bold;
@@ -40,13 +40,21 @@
   border-radius: 5px;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   display: grid;
-  padding: 40px 15px;
+  padding: 2.5rem 0.3rem;
 
   .info-style {
     color: $grayishBlue;
     text-align: center;
     font-size: 12px;
+
+    .badge {
+      color: $red;
+      background: $lightRed;
+      font-size: inherit;
+      margin-left: 0.4em;
+    }
   }
+
   .pageviews {
     letter-spacing: 2px;
     font-weight: bold;
@@ -56,26 +64,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2em;
+
     .value {
       font-weight: bold;
       font-size: 32px;
-      padding-right: 7px;
-    }
-    .info-style {
-      margin-top: 3px;
+      padding-right: 0.25em;
     }
   }
 
   .billing-selection {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 3rem 1fr;
+    grid-gap: 1rem;
     font-size: 12px;
+    margin-bottom: 1.7em;
 
-    app-check-switch {
-      margin: 0 7px;
+    .monthly {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
 
-    .info-style {
+    .yearly {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .line-divider {
+    margin-left: -0.3rem;
+    margin-right: -0.3rem;
+    background: $grayishBlue;
+  }
+
+  .advantages-list {
+    ::marker {
+      color: red;
     }
   }
 }

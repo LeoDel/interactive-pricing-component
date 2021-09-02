@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CheckSwitchComponent } from './check-switch/check-switch.component';
+import { SliderSelectComponent } from './slider-select/slider-select.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     CheckSwitchComponent,
+    SliderSelectComponent,
   ],
   imports: [
     BrowserModule,
